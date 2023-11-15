@@ -1,17 +1,40 @@
-// import React from 'react'
 
-// const CountDown = () => {
-//     return (
-//         <div >
-//             <div className='mt-28 mr-28'>CountDown</div>
-//         </div>
-//     )
-// }
-
-// export default CountDown
 
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+
+
+
+
+
+
+const AnimatedBorder = ({ children }) => {
+    return (
+        <div className="flex items-center justify-center text-center ">
+            <motion.div
+                className="px-4 py-3 bg-[#000] border-4 rounded-full"
+                initial={{ borderColor: '#000' }}
+                animate={{
+                    borderColor: ['#f00', '#0f0', '#00f', '#f00'], // You can add more colors here for variation
+                    transition: {
+                        duration: 5,
+                        repeat: Infinity,
+                        repeatType: 'loop',
+                        ease: 'linear',
+                    },
+                }}
+            >
+                {children}
+            </motion.div>
+        </div>
+    );
+};
+
+
+
+
+
+
 
 const Countdown = () => {
     const targetDate = new Date("2023-12-31T23:59:59").getTime(); // Set your target date and time
@@ -40,25 +63,25 @@ const Countdown = () => {
     }, [targetDate, controls]);
 
     return (
-        <div className="flex items-center justify-center h-screen">
-            <motion.div animate={controls}>
+        <div className="flex items-center justify-center w-full ml-[500px]">
+            <motion.div animate={controls} className="">
                 <div className="grid grid-cols-5 gap-4">
-                    <div className="text-center">
+                    <AnimatedBorder className="text-center">
                         <div className="text-6xl font-semibold">{timeRemaining.days}</div>
                         <div className="text-xl">Days</div>
-                    </div>
-                    <div className="text-center">
+                    </AnimatedBorder>
+                    <AnimatedBorder className="text-center">
                         <div className="text-6xl font-semibold">{timeRemaining.hours}</div>
                         <div className="text-xl">Hours</div>
-                    </div>
-                    <div className="text-center">
+                    </AnimatedBorder>
+                    <AnimatedBorder className="text-center">
                         <div className="text-6xl font-semibold">{timeRemaining.minutes}</div>
                         <div className="text-xl">Minutes</div>
-                    </div>
-                    <div className="text-center">
+                    </AnimatedBorder>
+                    <AnimatedBorder className="text-center">
                         <div className="text-6xl font-semibold">{timeRemaining.seconds}</div>
                         <div className="text-xl">Seconds</div>
-                    </div>
+                    </AnimatedBorder>
                 </div>
             </motion.div>
         </div>
@@ -95,10 +118,12 @@ function getTimeRemaining(targetDate) {
 
 function App() {
     return (
-        <div className='w-full my-8 h-[200px] object-contain flex justify-center items-center bg-[#111]'
-        // style={{ background: "url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*kb8vIWPzpTxS0R-E-qg2yw.png')" }}
+        <div className='w-full my-8 h-[300px] flex justify-center items-center bg-cover bg-no-repeat'
+            style={{ backgroundImage: "url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg')" }}
+        // style={{background-image: url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg');}}
         >
             <Countdown />
+            {/* <AnimatedBorder /> */}
         </div>
     );
 }

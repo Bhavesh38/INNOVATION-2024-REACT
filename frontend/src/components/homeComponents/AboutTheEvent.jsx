@@ -3,6 +3,29 @@ import { motion } from "framer-motion"
 import EventCard from './aboutTheEvents/EventCard';
 import { EventsCardContent } from '../../assets/assestscript';
 
+const AnimatedBorder = ({ children }) => {
+    return (
+        <div className="flex items-center justify-center text-center ">
+            <motion.div
+                className="px-4 py-3 bg-[#000] border-4 rounded-full"
+                initial={{ borderColor: '#000' }}
+                animate={{
+                    borderColor: ['#03e9f4', '#fff', '#03e9f4', '#03e9f4'], // You can add more colors here for variation
+                    transition: {
+                        duration: 5,
+                        repeat: Infinity,
+                        repeatType: 'loop',
+                        ease: 'linear',
+                    },
+                }}
+            >
+                {children}
+            </motion.div>
+        </div>
+    );
+};
+
+
 const AboutTheEvent = () => {
     return (
         <motion.div
@@ -24,7 +47,10 @@ const AboutTheEvent = () => {
             </div>
             <div className='flex flex-col justify-center w-full p-4'>
                 <h3 className='text-2xl font-bold text-center'>APPLY HERE TO BE OUR CAMPUS AMBASSADOR</h3>
-                <button className='p-2 mx-auto font-bold bg-gray-800 shadow-lg shadow-gray-50 border-sm text-gray-50 w-fit' type='button'>CLICK HERE</button>
+                <button className='rounded-full mx-auto mt-4 font-medium text-gray-100 bg-gray-600  hover:shadow-[100px] shadow-[#03e9f4] border-sm w-fit hover:bg-[#03e9f4] hover:text-gray-50' type='button'>
+                    <AnimatedBorder>CLICK HERE</AnimatedBorder>
+                </button>
+                {/* <AnimatedButton /> */}
             </div>
 
         </motion.div>
