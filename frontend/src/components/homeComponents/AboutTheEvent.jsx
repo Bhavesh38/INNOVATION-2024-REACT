@@ -47,10 +47,16 @@ const AboutTheEvent = () => {
             </div>
             <div className='flex flex-col justify-center w-full p-4'>
                 <h3 className='text-2xl font-bold text-center'>APPLY HERE TO BE OUR CAMPUS AMBASSADOR</h3>
-                <button className='rounded-full mx-auto mt-4 font-medium text-gray-100 bg-gray-600  hover:shadow-[100px] shadow-[#03e9f4] border-sm w-fit hover:bg-[#03e9f4] hover:text-gray-50' type='button'>
-                    <AnimatedBorder>CLICK HERE</AnimatedBorder>
+                {/* <button className="w-40 h-12 bg-gray-900 cursor-pointer rounded-3xl border-2 border-[#9748FF] shadow-[inset_0px_-2px_0px_1px_#9748FF] group hover:bg-[#9748FF] transition duration-300 ease-in-out mx-auto mt-2">
+                    <span className="font-medium text-[#fff]">CLICK HERE!</span>
+                </button> */}
+                <button className="inline-flex items-center px-4 py-2 mx-auto mt-4 font-mono text-xl font-semibold text-gray-100 transition duration-300 ease-in-out delay-150 border-2 border-gray-100 rounded-full cursor-pointer hover:text-gray-900 hover:bg-gray-100 hover:-translate-y-1 hover:scale-75 focus:bg-transparent max-w-fit">
+                    CLICK HERE!
                 </button>
-                {/* <AnimatedButton /> */}
+
+                {/* <button className='rounded-full mx-auto mt-4 font-medium text-gray-100 bg-gray-600  hover:shadow-[100px] shadow-[#03e9f4] border-sm w-fit hover:bg-[#03e9f4] hover:text-gray-50' type='button'>
+                    <AnimatedBorder>CLICK HERE</AnimatedBorder>
+                </button> */}
             </div>
 
         </motion.div>

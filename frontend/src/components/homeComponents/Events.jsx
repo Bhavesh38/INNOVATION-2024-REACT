@@ -80,7 +80,7 @@ function Events() {
             type: 'wiggle',
             variant: {
                 hidden: { scale: 0.8, rotate: 0 },
-                visible: { scale: 1, rotate: 5, transition: { yoyo: Infinity, duration: 0.5 } }
+                visible: { scale: 1, transition: { yoyo: Infinity, duration: 0.5 } }
             }
         }
     ];
@@ -97,6 +97,8 @@ function Events() {
                             initial="hidden"
                             animate="visible"
                             variants={animations[index % animations.length].variant}
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.8 }}
                             className="flex flex-col w-full mx-auto cursor-pointer lg:w-1/3 md:w-1/2 sm:w-full">
                             <img src={item.imgUrl} alt='img.png' className="h-36 w-44" />
                             <h3 className="text-2xl font-bold text-center">{item.name}</h3>
