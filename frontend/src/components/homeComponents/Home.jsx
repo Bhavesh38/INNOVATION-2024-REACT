@@ -6,15 +6,19 @@ import CountDown from './CountDown';
 import ComingSoon from './ComingSoon';
 import Events from './Events';
 import Registeration from './Registeration';
+import Footer from '../footer/Footer';
+import Partners from './Partners';
 
 const Home = () => {
   return (
-    <div className='fixed top-0 w-full h-screen mt-20 overflow-auto'>
+    <div className='fixed top-0 w-screen h-screen mt-20 overflow-auto'>
       <ComingSoon />
       <AboutTheEvent />
       <CountDown />
       <Events />
       <Registeration />
+      <Partners />
+      <Footer />
     </div>
   )
 }

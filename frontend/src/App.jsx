@@ -10,7 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Schedule from "./components/schedule/Schedule";
 import Partners from "./components/partners/Partners";
 import Gallery from "./components/gallery/Gallery";
-import Login from "./components/registeration/Login";
+// import Login from "./components/registeration/Login";
 
 
 
@@ -32,7 +32,7 @@ function App() {
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/partners' element={<Partners />} />
         <Route path='/schedule' element={<Schedule />} />
-        <Route path='/login' element={<Login />} />
+        {/* <Route path='/login' element={<Login />} /> */}
       </Routes>
     </BrowserRouter>
   );

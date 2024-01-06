@@ -30,14 +30,8 @@ const AnimatedBorder = ({ children }) => {
     );
 };
 
-
-
-
-
-
-
 const Countdown = () => {
-    const targetDate = new Date("2023-12-31T23:59:59").getTime(); // Set your target date and time
+    const targetDate = new Date("2024-03-31T23:59:59").getTime(); // Set your target date and time
     const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining(targetDate));
 
     const controls = useAnimation();
@@ -63,23 +57,23 @@ const Countdown = () => {
     }, [targetDate, controls]);
 
     return (
-        <div className="flex items-center justify-center w-full ml-[500px]">
+        <div className="flex items-center">
             <motion.div animate={controls} className="">
-                <div className="grid grid-cols-5 gap-4">
+                <div className="grid grid-cols-5 gap-3">
                     <AnimatedBorder className="text-center">
-                        <div className="text-6xl font-semibold">{timeRemaining.days}</div>
+                        <div className="text-5xl font-semibold">{timeRemaining.days}</div>
                         <div className="text-xl">Days</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-6xl font-semibold">{timeRemaining.hours}</div>
+                        <div className="text-5xl font-semibold">{timeRemaining.hours}</div>
                         <div className="text-xl">Hours</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-6xl font-semibold">{timeRemaining.minutes}</div>
+                        <div className="text-5xl font-semibold">{timeRemaining.minutes}</div>
                         <div className="text-xl">Minutes</div>
                     </AnimatedBorder>
                     <AnimatedBorder className="text-center">
-                        <div className="text-6xl font-semibold">{timeRemaining.seconds}</div>
+                        <div className="text-5xl font-semibold">{timeRemaining.seconds}</div>
                         <div className="text-xl">Seconds</div>
                     </AnimatedBorder>
                 </div>
@@ -118,12 +112,11 @@ function getTimeRemaining(targetDate) {
 
 function App() {
     return (
-        <div className='w-full my-8 h-[300px] flex justify-center items-center bg-cover bg-no-repeat'
+        <div className='w-full my-8 h-[300px] flex justify-end items-center bg-cover bg-no-repeat'
             style={{ backgroundImage: "url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg')" }}
-        // style={{background-image: url('https://t3.ftcdn.net/jpg/04/88/88/66/360_F_488886674_k46JuAeeKzGIEK3nwhaCMvnsEDE59NB6.jpg');}}
+
         >
             <Countdown />
-            {/* <AnimatedBorder /> */}
         </div>
     );
 }
