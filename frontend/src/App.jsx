@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Schedule from "./components/schedule/Schedule";
 import Partners from "./components/partners/Partners";
 import Gallery from "./components/gallery/Gallery";
+import Footer from "./components/footer/Footer";
 // import Login from "./components/registeration/Login";
 
 
@@ -17,9 +18,7 @@ import Gallery from "./components/gallery/Gallery";
 function App() {
 
   return (
-
     <BrowserRouter>
-
       <div className="relative w-screen h-screen">
         <Navbar />
         <Universe />

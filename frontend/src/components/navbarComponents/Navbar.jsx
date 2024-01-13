@@ -40,6 +40,7 @@ const Navbar = () => {
     const dispatch = useDispatch();
     const { navbarActive } = useSelector(state => state.activenessSlice);
 
+    // console.log(navbarActive);
     const handleNavbarItemClick = (item) => {
         dispatch(setNavbarActive(item.name));
         navigate(item.link);

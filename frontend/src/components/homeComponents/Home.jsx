@@ -8,6 +8,7 @@ import Events from './Events';
 import Registeration from './Registeration';
 import Footer from '../footer/Footer';
 import Partners from './Partners';
+import Media from './Media';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CountDown />
       <Events />
       <Registeration />
+      <Media />
       <Partners />
       <Footer />
     </div>
