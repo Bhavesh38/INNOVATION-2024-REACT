@@ -1,6 +1,7 @@
 export const sliderImages = [
     {
         url: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg'
+        // url: "https://i.ibb.co/X80f2wx/Whats-App-Image-2023-08-04-at-22-29-03.jpg"
     },
     {
         url: 'https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk='

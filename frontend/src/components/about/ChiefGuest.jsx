@@ -12,10 +12,11 @@ const ChiefGuest = () => {
         slidesToScroll: 1
     };
     return (
-        <div className=' bg-[#000] min-h-32 my-4'>
-            <div className='w-full text-5xl text-center'>2k23 Chief Guests</div>
-            <div className=''>
-                <Slider {...settings} className='mx-4'>
+        <div className='my-4 min-h-32'>
+            <h2 className='w-full my-4 text-3xl italic font-bold text-center'>Chief Guests</h2>
+            <div className="w-20 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded" ></div>
+            <div className='w-full mx-auto md:w-1/2'>
+                <Slider {...settings} className='mx-4 '>
                     {
                         chiefGuests.map((item, index) => (
                             <ChiefGuestCard key={index} item={item} />

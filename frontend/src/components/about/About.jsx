@@ -3,6 +3,7 @@ import AboutSlider from "./AboutSlider"
 import ChiefGuest from "./ChiefGuest";
 import "./About.css"
 import ChiefGuestCard from "./ChiefGuestCard";
+import Winners from "./Winners";
 
 
 const About = () => {
@@ -12,6 +13,7 @@ const About = () => {
 
             <AboutSlider />
             <ChiefGuest />
+            <Winners />
             <Footer />
         </div>
     )
