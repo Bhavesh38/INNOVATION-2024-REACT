@@ -19,3 +19,66 @@ export const m_images = [
     },
 
 ]
+
+export const currentYearPartner = [
+    {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor2.png',
+    },
+    {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor3.png',
+    },
+    {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor6.png',
+    }, {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor7.png',
+    }, {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor10.png',
+    }, {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters%202/sponsor11.png',
+    }, {
+        imageURL: 'https://iem-innovacion.com/Home%20Page/assets/media/supporters/icommunication.jpeg',
+    }
+
+];
+export const prevYearPartnerImages = [
+    { imageURL: 'https://i.ibb.co/YDdHS5M/sponsor27.png', },
+    { imageURL: 'https://i.ibb.co/YhfmC9Y/sponsor26.png', },
+    { imageURL: 'https://i.ibb.co/NSR2wH1/sponsor25.png', },
+    { imageURL: 'https://i.ibb.co/84NdsJn/sponsor24.png', },
+    { imageURL: 'https://i.ibb.co/bbkFcjC/sponsor23.png', },
+    { imageURL: 'https://i.ibb.co/86SGBJ2/sponsor21.png', },
+    { imageURL: 'https://i.ibb.co/23s7zhY/sponsor20.png', },
+    { imageURL: 'https://i.ibb.co/vL13VKY/sponsor19.png', },
+    { imageURL: 'https://i.ibb.co/wg97PQ7/sponsor17.png', },
+    { imageURL: 'https://i.ibb.co/CQF3M50/sponsor16.png', },
+    { imageURL: 'https://i.ibb.co/C8hCmxS/sponsor14.png', },
+    { imageURL: 'https://i.ibb.co/5FWkHt7/sponsor13.png', },
+    { imageURL: 'https://i.ibb.co/5cwTY0d/sponsor12.png', },
+    { imageURL: 'https://i.ibb.co/D79CRmD/sponsor9.png', },
+    { imageURL: 'https://i.ibb.co/jbJ0D0Y/sponsor8.png', },
+    { imageURL: 'https://i.ibb.co/nQsBmgt/sponsor5.png', },
+    { imageURL: 'https://i.ibb.co/qjYtjdz/sponsor1.png', },
+    { imageURL: 'https://i.ibb.co/C85sT9z/R.png', },
+    { imageURL: 'https://i.ibb.co/DYSthDv/tataia.png', },
+    { imageURL: 'https://i.ibb.co/3m84Yw4/sponsor53.png', },
+    { imageURL: 'https://i.ibb.co/3vj3XWs/sponsor54.png', },
+    { imageURL: 'https://i.ibb.co/kqsPW6G/sponsor52.png', },
+    { imageURL: 'https://i.ibb.co/2tX0gGX/sponsor51.png', },
+    { imageURL: 'https://i.ibb.co/TcBK82z/sponsor50.png', },
+    { imageURL: 'https://i.ibb.co/T8v7Dps/sponsor49.png', },
+    { imageURL: 'https://i.ibb.co/sP1kswL/sponsor48.png', },
+    { imageURL: 'https://i.ibb.co/0yvxgyP/sponsor47.png', },
+    { imageURL: 'https://i.ibb.co/pRNTdRK/sponsor44.png', },
+    { imageURL: 'https://i.ibb.co/w0G81y2/sponsor43.png', },
+    { imageURL: 'https://i.ibb.co/MDn067Z/sponsor41.png', },
+    { imageURL: 'https://i.ibb.co/Mp0dVSb/sponsor40.png', },
+    { imageURL: 'https://i.ibb.co/YbFnVZD/sponsor39.png', },
+    { imageURL: 'https://i.ibb.co/MBJY1Bt/sponsor38.png', },
+    { imageURL: 'https://i.ibb.co/MG1WkTj/sponsor35.png', },
+    { imageURL: 'https://i.ibb.co/D7dmqnp/sponsor33.png', },
+    { imageURL: 'https://i.ibb.co/Cs7J8dc/sponsor32.png', },
+    { imageURL: 'https://i.ibb.co/b38NLf6/sponsor29.png', },
+    { imageURL: 'https://i.ibb.co/W3H8ZN9/sponsor31.png', },
+    { imageURL: 'https://i.ibb.co/WKnLwfc/sponsor18.png', },
+    { imageURL: 'https://i.ibb.co/9WR7VpV/sponsor4.png', },
+]

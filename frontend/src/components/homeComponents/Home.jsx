@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutTheEvent from './AboutTheEvent'
-import CircularStrip from './AboutTheEvent'
+// import CircularStrip from './AboutTheEvent'
 import "./Home.css";
 import CountDown from './CountDown';
 import ComingSoon from './ComingSoon';
