@@ -20,18 +20,17 @@ const images = [
 ]
 const Media = () => {
     return (
-        <div className='w-full p-2 bg-[#111111] bg-opacity-70'>
+        <div className='w-full p-2 bg-[#111111] bg-opacity-70 '>
             <h2 className='w-full my-4 text-3xl italic font-bold text-center'>MEDIA</h2>
             <div className="w-20 h-1 mx-auto mb-4 -mt-4 text-gray-100 bg-gray-100 rounded" ></div>
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-col-1 '>
+            <div className='grid w-full sm:grid-cols-2 md:grid-cols-3 grid-col-1'>
                 {
                     images.map((image, index) => (
-                        <div key={index} className='m-2 bg-gray-100'>
-                            <img src={image.url} alt="" className='object-contain w-32 h-32' />
+                        <div key={index} className=''>
+                            <img src={image.url} alt="" className='object-contain w-60 h-60' />
                         </div>
                     ))
                 }
-
             </div>
         </div>
     )
