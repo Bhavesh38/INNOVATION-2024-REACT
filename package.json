@@ -9,5 +9,15 @@
     "react-router-dom": "^6.17.0",
     "react-three-fiber": "^6.0.13",
     "three": "^0.158.0"
-  }
+  },
+  "name": "innovation-2024-react",
+  "description": "\"# INNOVATION-2024-REACT\"",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

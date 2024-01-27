@@ -86,19 +86,19 @@ p {
 }
 
 .top {
-  animation: animateTop 3s ease-in-out infinite;
+  animation: animateTop 5s ease-in-out infinite;
 }
 
 .bottom {
-  animation: animateBottom 3s ease-in-out infinite;
+  animation: animateBottom 5s ease-in-out infinite;
 }
 
 .right {
-  animation: animateRight 3s ease-in-out infinite;
+  animation: animateRight 5s ease-in-out infinite;
 }
 
 .left {
-  animation: animateLeft 3s ease-in-out infinite;
+  animation: animateLeft 5s ease-in-out infinite;
 }
 
 @keyframes animateTop {
@@ -165,27 +165,28 @@ p {
 }
 
 .card:hover {
-  /* box-shadow: 0 10px 10px rgba(230, 230, 230, 0.5); */
+  box-shadow: 10px 10px 10px rgba(77, 76, 76, 0.5);
+
 }
 
 .event-card {
-  --color: #32f0da; /* the border color */
-  --border: 5px; /* the border thickness*/
-  --offset: 10px; /* control the offset*/
-  --gap: 5px; /* the gap on hover */
+  --color: #144d58; /* the border color */
+  --border: 10px; /* the border thickness*/
+  --offset: 6px; /* control the offset*/
+  --gap: 10px; /* the gap on hover */
 
   --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
     var(--color) 0;
   --_o: calc(3 * var(--offset));
-  padding: calc(var(--gap) + var(--border))
+  /* padding: calc(var(--gap) + var(--border))
     calc(var(--gap) + var(--border) + var(--offset))
     calc(var(--gap) + var(--border) + var(--offset))
-    calc(var(--gap) + var(--border));
+    calc(var(--gap) + var(--border)); */
   background: linear-gradient(var(--_c)) var(--_o) var(--_o),
     linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
-  filter: grayscale(0.4);
+  filter: grayscale(1.5);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -193,6 +194,7 @@ p {
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
+  border-color: rgb(71 85 105);
 }
 
 ::-webkit-scrollbar {
